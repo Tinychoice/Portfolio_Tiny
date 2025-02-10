@@ -77,13 +77,15 @@ nav ul li a:hover {
 nav ul li{
     list-style: none;
 }
-/* footer{
-    text-align: center;
-    padding: 0px;
-    position: fixed;
-    bottom: 0;
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-} */
+    text-align: center;
+    padding: 20px 0;
+    background-color: #444;
+}
 
 /* Section principale */
 .hero-section {
@@ -168,7 +170,6 @@ h2 {
     
 }
 
-/* Portfolio Section */
 .portfolio-section {
     text-align: center;
     padding: 50px 20px;
@@ -193,19 +194,12 @@ h2 {
     height: auto;
     border-radius: 10px;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    opacity: 0.5; /* Transparence de base */
+    opacity: 0.5; 
 }
 
 .portfolio-gallery img:hover {
-    opacity: 1; /* Retour aux couleurs normales */
-    transform: scale(1.05); /* Léger zoom au survol */
-}
-
-
-/* P
-footer{
-    display: flex;
-    justify-content: center;
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 /* Responsive */
