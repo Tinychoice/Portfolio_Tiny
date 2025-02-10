@@ -22,6 +22,12 @@ nav{
     max-width: 1400px;
     margin: 0 auto;
 }
+#logo img {
+    height: 50px; /* Ajuste la taille de ton logo */
+    width: auto;  /* Garde les proportions */
+    display: block;
+}
+
 #logo{
     display: flex;
     align-items: center;
