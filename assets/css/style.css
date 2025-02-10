@@ -167,6 +167,42 @@ h2 {
     color: #CDA8AC;
     
 }
+
+/* Portfolio Section */
+.portfolio-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-gallery a {
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.portfolio-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 0.5; /* Transparence de base */
+}
+
+.portfolio-gallery img:hover {
+    opacity: 1; /* Retour aux couleurs normales */
+    transform: scale(1.05); /* Léger zoom au survol */
+}
+
+
+/* P
 footer{
     display: flex;
     justify-content: center;
