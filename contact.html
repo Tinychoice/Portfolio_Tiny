@@ -5,36 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <title>Portfolio Tinychoice</title>
+    <title>Contact - Tinychoice</title>
 </head>
 <body>
     <header>
         <nav>
             <div id="logo">
-                <div class="logo-text">Tinychoice</div>
+                <a href="index.html">
+                    <img src="assets/img/jellyfish_brown.png" alt="Logo Tinychoice">
+                </a>
+                <span class="logo-text">TinyChoice</span>
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="portfolio.html">Projets</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="hero-section">
-            <figure class="hero-pic">
-                <img src="assets/img/hero.png" alt="">
-            </figure>
-            <div>
-                <form action="/action_page.php">
-                    <label for="fname">Prénom :</label><br>
-                    <input type="text" id="fname" name="fname" value="" required><br>
-                    <label for="lname">Nom :</label><br>
-                    <input type="text" id="lname" name="lname" value="" required><br><br>
-                    <label for="lname">Email :</label><br>
-                    <input type="text" id="email" name="email" value="" required><br><br>
-                    <input type="submit" value="Envoyer">
-                  </form>
+            <h2>Me Contacter</h2>
+            <p>N'hésitez pas à m'envoyer un message pour tout projet ou collaboration</p>
+            
+            <div class="contact-form">
+                <form action="/action_page.php" method="POST">
+                    <div class="form-group">
+                        <label for="fname">Prénom :</label>
+                        <input type="text" id="fname" name="fname" placeholder="Votre prénom" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lname">Nom :</label>
+                        <input type="text" id="lname" name="lname" placeholder="Votre nom" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+                    </div>
+                    
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+            
+            <div class="social" style="margin-top: 30px;">
+                <a href="https://www.linkedin.com/in/alexandra-cullmann-3074b9350/" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Tinychoice" target="_blank" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/dokidoki_morniing/" target="_blank" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
             </div>
         </section>
     </main>

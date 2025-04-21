@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <title>Portfolio - Tinychoice</title>
+    <title>Projets - Tinychoice</title>
 </head>
 <body>
     <header>
         <nav>
             <div id="logo">
-                <div class="logo-text">Tinychoice</div>
+                <a href="index.html">
+                    <img src="assets/img/jellyfish_brown.png" alt="Logo Tinychoice">
+                </a>
+                <span class="logo-text">TinyChoice</span>
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="projets.html">Projets</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -23,13 +26,66 @@
 
     <main>
         <section class="portfolio-section">
-            <h2>Mon Portfolio</h2>
-            <p>Découvrez mes réalisations</p>
+            <h2>Mes Projets</h2>
+            <p>Découvrez mes réalisations et travaux récents</p>
 
-            <div class="portfolio-gallery">
-                <a href="#img1" id="img1"><img src="assets/img/kurapika.png" alt="Projet 1"></a>
-                <a href="#img2" id="img2"><img src="assets/img/kurapika.png" alt="Projet 2"></a>
-                <a href="#img3" id="img3"><img src="assets/img/kurapika.png" alt="Projet 3"></a>
+            <div class="projects-container">
+                <!-- Projet 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/kurapika.png" alt="Application Web">
+                    </div>
+                    <div class="project-info">
+                        <h3>Plateforme E-learning</h3>
+                        <p>Application web développée avec React et Node.js permettant aux utilisateurs de suivre des cours en ligne et de tracker leur progression.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Tinychoice/elearning-platform" target="_blank">
+                                <i class="fa-brands fa-github"></i> Code source
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Démo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/kurapika.png" alt="Application Mobile">
+                    </div>
+                    <div class="project-info">
+                        <h3>Gestionnaire de Budget</h3>
+                        <p>Application mobile développée avec Flutter permettant de suivre ses dépenses et revenus tout en offrant des visualisations de données pertinentes.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Tinychoice/budget-tracker" target="_blank">
+                                <i class="fa-brands fa-github"></i> Code source
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Démo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/kurapika.png" alt="Intelligence Artificielle">
+                    </div>
+                    <div class="project-info">
+                        <h3>Modèle de Prédiction</h3>
+                        <p>Implémentation d'un modèle ML en Python qui prédit les résultats sportifs en se basant sur des données historiques et statistiques d'équipes.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Tinychoice/sports-prediction" target="_blank">
+                                <i class="fa-brands fa-github"></i> Code source
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fa-solid fa-file-pdf"></i> Rapport
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
